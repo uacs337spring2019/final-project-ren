@@ -15,7 +15,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "start memo_service.json",  
+    "start": "start memo_service.js",  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Allison",
