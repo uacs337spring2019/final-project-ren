@@ -5,7 +5,7 @@
   "engines":{
     "node": "6.11.1"
   },
-  "main": "index.html",
+  "main": "memo.html",
   "dependencies": {
     "client-sessions": "^0.8.0",
     "cookie-parser": "^1.4.4",
