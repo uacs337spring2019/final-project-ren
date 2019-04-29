@@ -41,7 +41,7 @@
  	 * @returns {} none.
  	 */
     function save(){
-    	let url = "http://remindmeplz.herokuapp.com/"; 
+    	let url = "https://remindmeplz.herokuapp.com/"; 
     	let when = document.getElementById("when").value;
     	let what = document.getElementById("what").value;
     	let where = document.getElementById("where").value;
@@ -74,7 +74,7 @@
  	 */
     function update(){
     	document.getElementById("memos").innerHTML = "";
-    	let url = "http://remindmeplz.herokuapp.com/";
+    	let url = "https://remindmeplz.herokuapp.com/";
     	fetch(url)
 			.then(checkStatus)
 			.then(function(responseText) {
