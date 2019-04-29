@@ -1,6 +1,10 @@
 /* Homework 11 (memo.css), by Xuanlei Ren
    CSc 337, Spring 2019 
    Purpose: this is a css file for html use. */
+body {
+	font-family: "Times New Roman", Times, serif;
+}
+
 #buttons, #area {
 	display: flex;
 }
