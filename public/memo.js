@@ -99,6 +99,11 @@
     function checkStatus(response) {
 		if (response.status >= 200 && response.status < 300) {
 			return response.text();
+		} else if (response.status == 500){ // no memo!
+			let hint = document.createElement("p");
+			hint.id = "hint";
+			hint.innerHTML = "Add something...";
+			document.getElementById("memos").appendChild(hint);
 		} else {
 			return Promise.reject(new Error(response.status + ": " + response.statusText));
 		}
