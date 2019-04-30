@@ -1,0 +1,44 @@
+<!-- Homework 11 (memo.html), by Xuanlei Ren
+   CSc 337, Spring 2019 
+   Purpose: -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="memo.css" />
+		<script type="text/javascript" src="memo.js"></script>
+		<title>memo</title>
+	</head>
+	<body>
+		
+		<div>
+			<h1>Remind Me!</h1>
+			<button id="back">back</button>
+		</div>
+
+		<div id="buttons">
+			<div id="memobutton" style="display: block;">
+				<button class="button"><img src="memo.png"></br></br>Memos</button>
+			</div>
+			
+			<div id="addbutton" style="display: block;">
+				<button class="button"><img src="add.png"></br></br>Add</button>
+			</div>
+		</div>
+
+		<div id="area">
+			<div id="memoarea" style="display: none;">
+					<h2>To-Do List</h2>
+					<div id="memos"></div>
+			</div>
+
+			<div id="inputarea" style="display: none;">
+				<div class="input">when <input type="text" id="when"></div>
+				<div class="input">what <input type="text" id="what"></div>
+				<div class="input">where <input type="text" id="where"></div>
+				<button id="save">save</button>
+			</div>
+		</div>
+	</body>
+</html>
