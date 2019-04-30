@@ -22,7 +22,7 @@ app.post('/', jsonParser, function (req, res) {
 	const where = req.body.where;
 	let filecontent = when + "*" + what + "*" + where + "\r\n";
 	if (fs.existsSync("memos.txt")) {
-    	fs.appendFile("memos.txt", filecontent, function (err) {
+    	fs.appendFile('memos.txt', filecontent, function (err) {
   			if (err) throw err;
   			console.log('Saved!');
 		});
@@ -38,7 +38,7 @@ app.post('/', jsonParser, function (req, res) {
 
 app.get('/', function (req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
-	let lines = fs.readFileSync("memos.txt", 'utf8').split("\r\n");
+	let lines = fs.readFileSync('memos.txt', 'utf8').split("\r\n");
 	let json = {};
 	let memos = [];
 	for (let i = 0; i < lines.length-1; i++){
