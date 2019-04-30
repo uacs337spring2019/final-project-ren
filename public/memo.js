@@ -73,7 +73,7 @@
  	 * @returns {} none.
  	 */
     function update(){
-    	document.getElementById("memos").innerHTML = "";
+    	document.getElementById("memos").innerHTML = "11:00am eat with friends at union";
     	let url = "https://remindmeplz.herokuapp.com/";
     	fetch(url)
 			.then(checkStatus)
